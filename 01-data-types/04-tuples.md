@@ -5,7 +5,7 @@
 A tuple is an **ordered, immutable** collection of items, denoted with `( )`. It can hold any mix of data types.
 
 ```python
-my_tuple = ("abc", "efg", "hij")
+my_tuple = ("abc", 123, "hij", True)
 ```
 
 > Since tuples are **immutable**, their values cannot be changed after creation — unlike lists.

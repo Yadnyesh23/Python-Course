@@ -3,5 +3,8 @@
 # yadnyesh , stavan = stavan , yadnyesh
 # print(f"Yadnyesh : {yadnyesh} & Stavan : {stavan}")
 
-cities = ('Thane', 'Mumbai', 'Pune')
-print(f"Is Delhi available ? : {'Delhi' in cities}")
+# cities = ('Thane', 'Mumbai', 'Pune')
+# print(f"Is Delhi available ? : {'Delhi' in cities}")
+
+tuple = (123, "abc")
+print(tuple)
