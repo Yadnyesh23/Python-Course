@@ -1,4 +1,7 @@
-a = int(input("Enter a number 'a' : "))
-b = int(input("Enter a number 'b' : "))
+string = input("Enter a string t check whether it is palindrome or not : ")
+reversedString = string[::-1]
 
-print("Sum is", a + b)
+if(string == reversedString):
+    print(f"{string} is palindrome.")
+else :
+    print(f"{string} is not palindrome.")
