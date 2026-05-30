@@ -15,3 +15,22 @@ print(iced_tea)
 nums = [1,2,3,4,5]
 squares = [x**2 for x in nums ]
 print(squares)
+
+# Set Comprehensions
+
+favourite_teas = [
+    "Masala Tea", "Green Tea", "Masala Tea",
+    "Lemon Tea", "Green Tea", "Elaichi Tea"
+]
+
+unique_chais = {chai for chai in favourite_teas}
+print(unique_chais)
+
+recipes = {
+    "Masala Chai": ["ginger", "cardamom", "clove"],
+    "Elaichi Chai": ["cardamom", "milk"],
+    "Spicy Chai": ["ginger", "black pepper", "clove"],
+}
+
+unique_spices = {spice for ingredients in recipes.values() for spice in ingredients}
+print(unique_spices)
