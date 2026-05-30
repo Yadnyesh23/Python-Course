@@ -312,8 +312,6 @@ B → Built-in
 
 This is called the **LEGB rule**. Python stops at the first scope where it finds the name.
 
----
-
 ### 1. Local Scope
 Variables defined **inside a function**. Only accessible within that function.
 
@@ -364,8 +362,6 @@ print(len("Yadnyesh"))   # len  → built-in
 print(type(42))           # type → built-in
 print(max([3, 1, 4]))     # max  → built-in
 ```
-
-Common built-ins: `print`, `len`, `type`, `range`, `int`, `str`, `list`, `dict`, `max`, `min`, `sum`, `input`, `open`
 
 ---
 
@@ -436,3 +432,278 @@ def add(a, b):
 print(add.__doc__)   # prints the docstring
 help(add)            # formatted output in terminal
 ```
+
+---
+
+## Built-in Functions Reference
+
+Python ships with many functions that are always available — no import needed.
+
+### A
+| Function | Description | Example |
+|----------|-------------|---------|
+| `abs(x)` | Absolute value | `abs(-5)` → `5` |
+| `all(iterable)` | `True` if all elements are truthy | `all([1, 2, 3])` → `True` |
+| `any(iterable)` | `True` if at least one element is truthy | `any([0, 0, 1])` → `True` |
+
+### B
+| Function | Description | Example |
+|----------|-------------|---------|
+| `bin(x)` | Binary string of an integer | `bin(10)` → `'0b1010'` |
+| `bool(x)` | Converts to boolean | `bool(0)` → `False` |
+| `bytearray(x)` | Creates a mutable byte array | `bytearray(3)` |
+| `bytes(x)` | Creates an immutable bytes object | `bytes(3)` |
+
+### C
+| Function | Description | Example |
+|----------|-------------|---------|
+| `callable(obj)` | `True` if object is callable | `callable(print)` → `True` |
+| `chr(i)` | Character from Unicode code point | `chr(65)` → `'A'` |
+
+### D
+| Function | Description | Example |
+|----------|-------------|---------|
+| `dict()` | Creates a dictionary | `dict(a=1, b=2)` |
+| `dir(obj)` | Lists attributes/methods of an object | `dir([])` |
+| `divmod(a, b)` | Returns `(quotient, remainder)` | `divmod(10, 3)` → `(3, 1)` |
+
+### E
+| Function | Description | Example |
+|----------|-------------|---------|
+| `enumerate(iterable)` | Adds index to each item | `enumerate(["a","b"])` → `(0,'a'), (1,'b')` |
+| `eval(expr)` | Evaluates a string as Python code | `eval("2 + 3")` → `5` |
+
+### F
+| Function | Description | Example |
+|----------|-------------|---------|
+| `filter(fn, iterable)` | Filters items where `fn` returns True | `filter(lambda x: x>2, [1,2,3])` |
+| `float(x)` | Converts to float | `float("3.14")` → `3.14` |
+| `format(val, spec)` | Formats a value | `format(3.14, ".1f")` → `'3.1'` |
+| `frozenset(x)` | Creates an immutable set | `frozenset([1, 2, 3])` |
+
+### G
+| Function | Description | Example |
+|----------|-------------|---------|
+| `getattr(obj, name)` | Gets attribute by name string | `getattr(obj, "age")` |
+| `globals()` | Returns global symbol table as dict | `globals()` |
+
+### H
+| Function | Description | Example |
+|----------|-------------|---------|
+| `hasattr(obj, name)` | `True` if object has the attribute | `hasattr(obj, "name")` |
+| `hash(obj)` | Returns hash value of object | `hash("hello")` |
+| `help(obj)` | Prints documentation | `help(str)` |
+| `hex(x)` | Hex string of an integer | `hex(255)` → `'0xff'` |
+
+### I
+| Function | Description | Example |
+|----------|-------------|---------|
+| `id(obj)` | Memory address (identity) of object | `id(42)` |
+| `input(prompt)` | Reads user input as string | `input("Name: ")` |
+| `int(x)` | Converts to integer | `int("10")` → `10` |
+| `isinstance(obj, type)` | `True` if obj is instance of type | `isinstance(5, int)` → `True` |
+| `iter(obj)` | Returns an iterator | `iter([1, 2, 3])` |
+
+### L
+| Function | Description | Example |
+|----------|-------------|---------|
+| `len(obj)` | Length of a sequence | `len("hello")` → `5` |
+| `list(x)` | Converts to list | `list((1, 2, 3))` |
+| `locals()` | Returns local symbol table as dict | `locals()` |
+
+### M
+| Function | Description | Example |
+|----------|-------------|---------|
+| `map(fn, iterable)` | Applies `fn` to each item | `map(str, [1,2,3])` |
+| `max(iterable)` | Largest item | `max([3, 1, 4])` → `4` |
+| `min(iterable)` | Smallest item | `min([3, 1, 4])` → `1` |
+
+### N
+| Function | Description | Example |
+|----------|-------------|---------|
+| `next(iterator)` | Gets next item from iterator | `next(iter([1,2,3]))` → `1` |
+
+### O
+| Function | Description | Example |
+|----------|-------------|---------|
+| `oct(x)` | Octal string of an integer | `oct(8)` → `'0o10'` |
+| `open(file, mode)` | Opens a file | `open("file.txt", "r")` |
+| `ord(char)` | Unicode code point of a character | `ord('A')` → `65` |
+
+### P
+| Function | Description | Example |
+|----------|-------------|---------|
+| `pow(x, y)` | `x` to the power of `y` | `pow(2, 10)` → `1024` |
+| `print(*args)` | Prints to console | `print("hello")` |
+
+### R
+| Function | Description | Example |
+|----------|-------------|---------|
+| `range(start, stop, step)` | Generates a sequence of numbers | `range(0, 10, 2)` |
+| `repr(obj)` | Printable representation of object | `repr([1,2])` → `'[1, 2]'` |
+| `reversed(seq)` | Reverses a sequence | `list(reversed([1,2,3]))` |
+| `round(x, n)` | Rounds to `n` decimal places | `round(3.14159, 2)` → `3.14` |
+
+### S
+| Function | Description | Example |
+|----------|-------------|---------|
+| `set(x)` | Creates a set | `set([1,1,2,3])` → `{1,2,3}` |
+| `setattr(obj, name, val)` | Sets attribute by name string | `setattr(obj, "age", 21)` |
+| `slice(start, stop)` | Creates a slice object | `slice(1, 5)` |
+| `sorted(iterable)` | Returns a new sorted list | `sorted([3,1,2])` → `[1,2,3]` |
+| `str(x)` | Converts to string | `str(42)` → `'42'` |
+| `sum(iterable)` | Sum of all items | `sum([1,2,3])` → `6` |
+| `super()` | Returns parent class object | used in class inheritance |
+
+### T
+| Function | Description | Example |
+|----------|-------------|---------|
+| `tuple(x)` | Converts to tuple | `tuple([1,2,3])` |
+| `type(obj)` | Returns the type of an object | `type(42)` → `<class 'int'>` |
+
+### V
+| Function | Description | Example |
+|----------|-------------|---------|
+| `vars(obj)` | Returns `__dict__` of an object | `vars(obj)` |
+
+### Z
+| Function | Description | Example |
+|----------|-------------|---------|
+| `zip(*iterables)` | Pairs items from multiple iterables | `zip([1,2], ["a","b"])` → `(1,'a'), (2,'b')` |
+
+---
+
+## Imports, Modules and Packages
+
+### What is a Module?
+
+A **module** is simply a `.py` file containing Python code (functions, classes, variables) that you can reuse in other files.
+
+```
+project/
+├── main.py
+└── math_utils.py    ← this is a module
+```
+
+```python
+# math_utils.py
+def add(a, b):
+    return a + b
+
+def multiply(a, b):
+    return a * b
+```
+
+### Why Use Modules?
+
+- **Reusability** — write once, import anywhere
+- **Organisation** — split large codebases into logical files
+- **Namespace isolation** — avoids name clashes between files
+
+---
+
+### Ways to Import
+
+```python
+# 1. Import the whole module — access with dot notation
+import math_utils
+print(math_utils.add(3, 4))
+
+# 2. Import a specific function — use directly, no dot needed
+from math_utils import add
+print(add(3, 4))
+
+# 3. Import with an alias — useful for long module names
+import math_utils as mu
+print(mu.add(3, 4))
+
+# 4. Import a function with an alias
+from math_utils import add as addition
+print(addition(3, 4))
+
+# 5. Import everything (avoid this — pollutes namespace)
+from math_utils import *
+print(add(3, 4))
+```
+
+> Prefer `import module` or `from module import specific_function` over `import *` — it keeps your namespace clean and makes the code easier to read.
+
+---
+
+### Standard Library Modules
+
+Python ships with a large standard library — no installation needed.
+
+```python
+import math
+print(math.sqrt(16))    # 4.0
+print(math.pi)          # 3.14159...
+
+import random
+print(random.randint(1, 10))   # random number between 1 and 10
+
+import os
+print(os.getcwd())     # current working directory
+
+import datetime
+print(datetime.date.today())   # today's date
+```
+
+---
+
+### What is a Package?
+
+A **package** is a **folder** containing multiple modules, with a special file called `__init__.py` inside it.
+
+```
+project/
+├── main.py
+└── utils/               ← this is a package
+    ├── __init__.py
+    ├── math_utils.py
+    └── string_utils.py
+```
+
+```python
+# Importing from a package
+from utils import math_utils
+from utils.math_utils import add
+```
+
+---
+
+### What is `__init__.py`?
+
+`__init__.py` is a special file that tells Python: **"treat this folder as a package"**.
+
+It can be completely empty, or it can define what gets exposed when someone imports the package.
+
+```python
+# utils/__init__.py — empty file is valid
+# Just its presence makes utils/ a package
+```
+
+```python
+# utils/__init__.py — expose specific things at package level
+from .math_utils import add
+from .string_utils import capitalise
+```
+
+With this setup:
+```python
+# Instead of:
+from utils.math_utils import add
+
+# You can now write:
+from utils import add   # cleaner!
+```
+
+---
+
+### Module vs Package vs Library
+
+| Term | What it is | Example |
+|------|-----------|---------|
+| **Module** | A single `.py` file | `math_utils.py` |
+| **Package** | A folder of modules with `__init__.py` | `utils/` |
+| **Library** | A collection of packages (installed via pip) | `numpy`, `pandas` |
