@@ -34,3 +34,15 @@ recipes = {
 
 unique_spices = {spice for ingredients in recipes.values() for spice in ingredients}
 print(unique_spices)
+
+# Dictionary Comprehensions
+
+chai_price_inr = {
+    "Masala Chai" : 40,
+    "Green tea" : 60,
+    "Lemon tea" : 200
+}
+
+chai_price_usd = {tea : price/80  for tea, price in chai_price_inr.items()}
+print(f"Price in Inr : {chai_price_inr}")
+print(f"Price in Inr : {chai_price_usd}")
