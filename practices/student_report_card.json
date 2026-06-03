@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Yash",
+        "rollno": 56,
+        "marks": {
+            "Maths": 95,
+            "Physics": 90,
+            "Chemistry": 91
+        }
+    },
+    {
+        "name": "Aarav",
+        "rollno": 57,
+        "marks": {
+            "Maths": 88,
+            "Physics": 92,
+            "Chemistry": 85
+        }
+    },
+    {
+        "name": "Sneha",
+        "rollno": 58,
+        "marks": {
+            "Maths": 97,
+            "Physics": 95,
+            "Chemistry": 96
+        }
+    }
+]
