@@ -56,7 +56,7 @@ class StudentManager:
         print("Student added succesfully")
     
     def display_students(self):
-        students_list = []
+        
         for student in self.students:
             print(student.display_details())
     
