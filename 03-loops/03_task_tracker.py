@@ -9,3 +9,8 @@ tasks = ['Coding' , 'Study', 'Gym', 'Sleep', 'Walk']
 
 for task in tasks:
     print(f"Completed task : {task}")
+
+grocery = ["Milk", "Bread", "Biscuits", "Rice"]
+
+for thing in grocery:
+    print(f"Grocery list : {thing}")
