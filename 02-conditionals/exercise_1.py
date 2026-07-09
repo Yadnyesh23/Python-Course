@@ -20,3 +20,5 @@ if total_purchase > 1000:
     print("Eligible for discount")
 if customer_age >= 60:
     print("Senior citizen")
+if customer_age < 18:
+    print("Teen")
